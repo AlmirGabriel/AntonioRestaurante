@@ -1,3 +1,8 @@
+:root {
+    --primary-color: #000000;
+    --white: #fff;
+    --gap: 3rem;
+}
 * {
     padding: 0;
     margin: 0;
@@ -8,6 +13,8 @@ html {
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.6rem;
+
+    
 }
 h1 h2 h3 h4 h5 h6 {
     font-family: 'Montserrat', sans-serif;
@@ -16,7 +23,25 @@ h1 {
     font-size: 6rem;
     text-transform: uppercase;
 }
-/*
-font-family: 'Montserrat', sans-serif;
-font-family: 'Open Sans', sans-serif;
-*/
+.main-bg-black {
+    background-image: url(../img/main-bg-black.svg);
+    background-size: cover;
+    background-position: center center;
+    color: var(--white)
+
+}
+.main-bg-white {
+    background-image: url(../img/main-bg-white.svg);
+    background-size: cover;
+    background-position: center center;
+    color: var(--primary-color)
+}
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--gap);
+
+}
+.section {
+    min-height: 100vh;
+}
