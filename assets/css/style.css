@@ -1,9 +1,3 @@
-:root {
-    --primary-color: #000000;
-    --white: #fff;
-    --light-gray-color: #EEEEEE;
-    --gap: 3rem;
-}
 * {
     padding: 0;
     margin: 0;
@@ -18,80 +12,11 @@ body {
 a {
     text-decoration: none;
 }
-.menu {
-    background: var(--white);
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    width: 100%;
-    border-bottom: 1px solid var(--light-gray-color);
-
-}
 h1 h2 h3 h4 h5 h6 {
     font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
 }
 h1 {
     font-size: 6rem;
     text-transform: uppercase;
-}
-.main-bg-black {
-    background-image: url(../img/main-bg-black.svg);
-    background-size: cover;
-    background-position: center center;
-    color: var(--white)
-
-}
-.main-bg-white {
-    background-image: url(../img/main-bg-white.svg);
-    background-size: cover;
-    background-position: center center;
-    color: var(--primary-color)
-}
-.main-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: var(--gap);
-}
-.menu-content {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 0;
-    padding-bottom: 0;
-}
-.menu ul {
-    list-style: none;
-    display: flex;
-}
-.menu ul li a {
-    display: block;
-    padding: 2rem;
-    font-size: 1.8rem;
-    color: black;
-    position: relative;
-}
-.menu ul li a::after {
-    content: '';
-    position: absolute;
-    bottom: 1rem;
-    left: 50%;
-    width: 0;
-    height: 0.2rem;
-    background: crimson;
-    transition: all 300ms ease-in-out;
-}
-.menu ul li a:hover::after {
-    width: 50%;
-    left: 25%;
-}
-.section {
-    min-height: 100vh;
-}
-.menu h1 {
-    font-size: 2.3rem;
-    color: black;
-    padding: 1.5rem;
-}
-.menu h1 a {
-    color: inherit;
 }
