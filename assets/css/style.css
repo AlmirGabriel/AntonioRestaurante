@@ -140,6 +140,11 @@ p {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
+    text-align: center;
+}
+.grid-one-content h2 {
+    margin-bottom: 1rem;
+
 }
 .grid {
     display: grid;
@@ -159,8 +164,13 @@ p {
     position: absolute;
     font-size: 8rem;
     font-style: italic;
-    top: -3rem;
+    top: -4rem;
     left: -2rem;
     transform: rotate(5deg);
-
+}
+.grid-main-heading {
+    margin-bottom: 1rem;
+}
+.grid-description {
+    padding-bottom: 5rem;
 }
