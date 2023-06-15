@@ -53,7 +53,7 @@ p {
 .main-content {
     max-width: 120rem;
     margin: 0 auto;
-    padding: var(--gap);
+    padding: 10rem var(--gap);
 }
 .menu-content {
     display: flex;
@@ -116,31 +116,33 @@ p {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     gap: var(--gap);
-    height: 100vh;
+    min-height: 100vh;
 }
 .intro-text-content .intro-img {
     display:flex;
     flex-flow: column wrap;
     justify-content: center;
 }
-.intro-img img{
+.intro-img img,
+.intro-img svg {
     max-width: 100%;
     height: auto;
 }
 .top3-content {
-    max-width: 80rem;
+    max-width: 64rem;
    display: flex;
-   flex-flow: column wrap;
+   flex-direction: column;
+   flex-wrap: nowrap;
    justify-content: center;
    height: 100vh; 
    text-align: center;
 }
 .grid-one-content {
-    height: 100vh;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     text-align: center;
+    min-height: 100vh;
 }
 .grid-one-content h2 {
     margin-bottom: 1rem;
