@@ -11,8 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
 </head>
 
-<body class="">
-
+<body>
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
     <aside class="menu">
         <div class="main-content menu-content">
             <h1><a href="#home">LOGO</a></h1>
@@ -23,7 +24,7 @@
                     <li><a href="#gallery">Gallery</a></li>
                     <li><a href="#grid-two">Grid Two</a></li>
                     <li><a href="#pricing">Pricing</a></li>
-                    <li><a href="#contact">Contatos</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -97,6 +98,7 @@
             <div class="gallery-img">
                 <img src="https://images.unsplash.com/source-404?fit=crop&fm=jpg&h=360&q=60&w=360" alt="random image from unsplash">
             </div>
+            <div></div>
         </div>
         </div>
     </section>
@@ -178,7 +180,7 @@
         </div>
     </section>
 
-    <section class="main-bg-black section" id="contact">
+    <section class="main-bg-black section" >
         <div class="main-content intro-content">
             <div class="intro-text-content">
                 <h2>JANUARY BRINGS US FIREFOX 85</h2>
@@ -189,32 +191,35 @@
                 <img src="./assets/img/javascript-optimized.svg" alt="javascript-not-optimize">
             </div>
         </div>
-        <div class="contact-form">
+        <div class="contact-form" id="contact">
             <fieldset class="form-grid">
                 <legend>Contact me</legend>
                 <div class="form-group">
                     <label for="first Name">First Name</label>
-                    <input type="text" name="first-name" id="first-name">
+                    <input type="text" name="first-name" id="first-name" placeholder="Your Name">
                 </div>
                 <div class="form-group">
                     <label for="last Name">Last Name</label>
-                    <input type="text" name="last-name" id="last-name">
+                    <input type="text" name="last-name" id="last-name"placeholder="Your Last Name">
                 </div>
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="email" name="email" id="email">
+                    <input type="email" name="email" id="email"placeholder="Your Email">
                 </div>
                 <div class="form-group full-width">
                     <label for="message">Message</label>
-                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    <textarea name="message" id="message" cols="30" rows="10"placeholder="Your Message"></textarea>
                 </div>
-                <div class="form-group">
+                <div class="form-group full-width">
                     <button type="submit">Send Message</button>
                 </div>
+                <div></div>
             </fieldset>
         </div>
-
     </section>
 
+    <footer id="footer" class="footer main-bg-white">
+        <p><a href="">Feito com ❤️ por Almir Gabriel Andrade</a></p>
+    </footer>
 </body>
 </html>
